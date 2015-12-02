@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "ava": "^0.7.0",
-    "node-dev": "^2.7.1"
+    "node-dev": "^2.7.1",
+    "test-request": "^1.0.0"
   }
 }
