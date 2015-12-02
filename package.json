@@ -1,0 +1,36 @@
+{
+  "name": "holodex-loomio-data",
+  "version": "0.0.0",
+  "description": "micro-service to serve Loomio data as agents and relationships",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "NODE_ENV=development npm start",
+    "prod": "NODE_ENV=production npm start",
+    "test": "NODE_ENV=test tape test/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holodex/loomio-data.git"
+  },
+  "keywords": [
+    "holodex",
+    "loomio",
+    "linked",
+    "data"
+  ],
+  "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.os)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holodex/loomio-data/issues"
+  },
+  "homepage": "https://github.com/holodex/loomio-data#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "feathers": "^1.2.0",
+    "feathers-memory": "^0.4.0",
+    "object-assign": "^4.0.1",
+    "pump": "^1.0.1",
+    "readable-stream": "^2.0.4"
+  }
+}
