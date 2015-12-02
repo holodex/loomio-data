@@ -6,7 +6,7 @@
 // faq: https://github.com/stephenplusplus/stream-faqs
 //
 var stream = require('readable-stream')
-var pump = require('pump')
+var miss = require('mississippi')
 
 module.exports = createWorker
 
@@ -15,7 +15,7 @@ function createWorker (config, api) {
   return {
     start: function () {
       poll(config, function () {
-        pump([
+        miss.pipe([
           readData(config),
           transformData(config),
           writeData(config, api)
